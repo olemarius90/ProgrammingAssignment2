@@ -1,13 +1,13 @@
 ## These functions computes the inverse of a matrix, but
 ## caches the calculated inverse instead of computing it 
 ## repeatedly. This saves computation time since the inverse
-## is only computed ones. If the matrix is reset, the
+## is only computed once. If the matrix is reset, the
 ## inverse of the new matrix is computed and cached.
 
 ## The makeCacheMatrix function creates a special "matrix" 
 ## object than can cahce its inverse. The matrix can be reset 
 ## and then the inverse of the new matrix will be calculated 
-## once and cahced.
+## once and cahced by the second function cacheSolve
 
 makeCacheMatrix <- function(x = matrix()) {
       invM <- NULL
